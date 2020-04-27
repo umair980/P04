@@ -24,6 +24,10 @@ body{
     background-color:  white;
 }
 
+#nav_menu_1 {
+    padding-right: 10px;
+    padding-left: 10px;
+}
 #nav_menu_1 ul{
     list-style-type: none;
     margin: 0;
@@ -35,6 +39,7 @@ body{
     display: inline;
     float: left;
     width: 16.7%;
+
 }
 
 #nav_menu_1 ul li a {
@@ -50,7 +55,7 @@ body{
 }
 
 #nav_menu_1 ul li a.current {
-    color: yellow;
+
 }
 
 #nav_menu_1 ul ul {
@@ -97,6 +102,7 @@ footer p {
     margin-top: 1px;
     margin-bottom: 1px;
     margin-left: 1px;
+    padding-top: 1px;
     border: 1px solid black;
 }
 
@@ -105,21 +111,39 @@ footer p {
     margin-top: 1px;
     margin-bottom: 1px;
     margin-left: 1px;
-    border: 1px solid black;
+    padding-top: 1px;
+    border: 1px solid red;
 }
 section {
 
     float: left;
     padding-right: 2.1%;
-    padding-left: 2.1%;
-    padding-bottom: 20px;
+    padding-left: 5%;
+    padding-bottom: 50px;
+    margin-left: 5%;
 }
 
 #myCarousel {
-    width: auto;
+    max-width: 90%;
+    clear: both;
+    border: 1px solid black;
 }
 .container {
-    margin-left: 10px;
+    max-width: 40%;
+    border: 1px solid black;
+}
+.carousel {
+    max-width: 40%;
+    border: 1px solid black;
+}
+.carousel-indicators {
+    border: 1px solid black;
+}
+.item {
+
+}
+#hours{
+    list-style-type: decimal;
 }
 
 #mobile_menu{display: none}
