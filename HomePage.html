@@ -1,3 +1,5 @@
+<!-- DEVELOPER: Umair Sindhu, IS117-002, Spring 2020 ->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,6 +31,11 @@
 
 
 </head>
+<body>
+
+<header>
+    <h2>Welcome to Jersey Eye Care!</h2>
+</header>
 
 <nav id="mobile_menu"></nav>
 <nav id="nav_menu_1">
@@ -38,16 +45,14 @@
         <li><a href="ContactPage.html" class="current">Contact</a></li>
         <li><a href="About.html" class="current">About</a>
             <ul>
-                <li><a href=AcceptedInsurances.html></a> Accepted Insurances</li>
+                <li><a href=AcceptedInsurances.html class="link"></a>Accepted Insurances</li>
             </ul>
         </li>
     </ul>
 </nav>
 
-
-<body>
-<section>
-<h2>Welcome to Jersey Eye Care!</h2>
+<div id="border">
+<div id="times">
 <h1>Hours:</h1>
 <ul id="hours">
     <li>Sunday: 11:00 am - 2:00 pm</li>
@@ -55,9 +60,11 @@
     <li>Wednesday: 11:00 am - 3:00 pm</li>
     <li>Friday: 11:00 am - 6:00 pm</li>
 </ul>
-</section>
+</div>
 
+    <div id="carouselBorder">
 <!--Caoursel -->
+
 <div class="container">
 
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -69,16 +76,29 @@
         </ol>
 
         <!-- Wrapper for slides -->
-        <div class="carousel-inner">
+        <div class="carousel-inner" role="listbox">
             <div class="item active" id="image3">
                 <img src="Images/eye exam 2.jpg" alt="eye exam" height=150px width="40%" min-width="150px"/>
+                <div class="carousel-caption">
+                <h3>Eye Exam 1</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                </div>
             </div>
+
 
             <div class="item" id="image4">
                 <img src="Images/getting eye exam.jpg" alt="getting eye exam" height=150px width="40%" min-width="150px"/>
+                <div class="carousel-caption">
+                    <h3>Eye Exam 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                </div>
             </div>
             <div class="item" id="image5">
-                <img src="Images/eyeglasses.jpg"  height=150px width="40%" min-width="150px"/>
+                <img src="Images/eyeglasses.jpg"  alt="eye exam" height=150px width="40%" min-width="150px"/>
+                <div class="carousel-caption">
+                    <h3>Eye Glasses</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna</p>
+                </div>
             </div>
         </div>
 
@@ -93,21 +113,36 @@
         </a>
     </div>
 </div>
-
-</body>
-</html>
-
-<!-- end of caoursel -->
-
-<img id="image1" src="Images/eye exam.jpg" height=150 width="40%"  min-width="150px"/>
-<img id="image2" src="Images/eyeglasses.jpg" height="150" width="40%" min-width="150px"/>
-</body>
-
-<footer class="footer page-footer font-small ">
-    <div class="container">
-        <div class="row">
-            <span class="text-muted">&copy; Umair Sindhu, April 30, 2020 |  Terms Of Use  |  Privacy Statement</span>
-        </div>
     </div>
-</footer>
+<!-- end of caoursel -->
+<div class="images">
+<div class="card_1"  style="width:200px" style="height: 35px">
+    <img id="card_image_1" src="Images/eye exam.jpg" alt="Card image" style="width:100%">
+    <div class="container_1">
+        <h4><b>Eye Exam</b></h4>
+        <p>Lorem Ipsum</p>
+    </div>
+</div>
+
+<div class="card_2"  style="width:200px" style="height: 35px">
+    <img id="card_image_2" src="Images/eyeglasses.jpg" alt="Card image" style="width:100%">
+    <div class="container_2">
+        <h4><b>Eye Glasses</b></h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+    </div>
+</div>
+
+</div>
+
+    <footer class="footer page-footer font-small ">
+        <div class="container">
+            <div class="row">
+                <span class="text-muted">&copy; Umair Sindhu, April 30, 2020 |  Terms Of Use  |  Privacy Statement</span>
+            </div>
+        </div>
+    </footer>
+</div>
+
+</body>
+
 </html>
